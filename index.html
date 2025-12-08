@@ -12,10 +12,30 @@
     </header>
     <section>
         <form action="" method="get">
-            
+            <!-- DADOS PESSOAIS -->
+            <fieldset>
+                <legend>Dados Pessoais</legend>
 
+                <label for="userName">Nome:</label>
+                <input type="text" name="userName" required>
+                <br>
+                <label for="userAge">Idade:</label>
+                <input type="number" name="userAge" min="12" max="100" required>
+                <br>
+                <label for="userBirthDate">Data de Nascimento:</label>
+                <input type="date" name="userBirthDate">
+                <br>
+                <label for="userEmail">Email:</label>
+                <input type="email" name="userEmail" required>
+                <br>
+                <label for="userPhone">Telefone:</label>
+                <input type="tel" name="userPhone" placeholder="DDD + Número sem espaços e hífens" pattern="[0-9]{11}">
+                <br>
+                <label for="userPhoto">Upload de foto:</label>
+                <input type="file" name="userPhoto" accept="image/*">
+            </fieldset>
 
-
+            <button>Enviar</button>
         </form>
     </section>
     <footer>
