@@ -96,7 +96,7 @@
             <fieldset>
                 <legend>Habits and Preferences</legend>
 
-                <p>Social Media:</p>
+                <p>Social media:</p>
                 <input type="checkbox" id="instagram" name="userSocialMedia" value="instagram">
                 <label for="instagram">Instagram</label>
                 <br>
@@ -108,7 +108,20 @@
                 <br>
                 <input type="checkbox" id="x" name="userSocialMedia" value="x">
                 <label for="x">X</label>
+                <br>
 
+                <label for="musicGenre">Favorite music genre:</label>
+                <input list="genres" id="musicGenre" type="text" name="userMusicGenre">
+                <datalist id="genres">
+                    <option value="Pop">
+                    <option value="Hip Hop">
+                    <option value="Rock">
+                    <option value="Eletronic">
+                </datalist>
+                <br>
+                
+                <label for="favoriteColor">Favorite color:</label>
+                <input id="favoriteColor" type="color" name="userFavoriteColor">
             </fieldset>
             <button type="submit">Enviar</button>
         </form>
